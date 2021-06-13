@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate:ital@1&showplay=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+    <div class="cal">
+      <h1 class="caltxt">Basic Calculator</h1>
+
+        <input style="font-size:40px;" type="text" name="screen" value=""  id="result" class="screen">
+
+        <table>
+          <tr>
+            <td><button type="button" name="button" class="button_style" value="1" onclick="show('1')">1</button></td>
+            <td><button type="button" name="button" class="button_style" value="2" onclick="show('2')">2</button></td>
+            <td><button type="button" name="button" class="button_style" value="3" onclick="show('3')">3</button></td>
+            <td><button type="button" name="button" class="button_style other" value="+" onclick="show('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" name="button" class="button_style" value="4" onclick="show('4')">4</button></td>
+            <td><button type="button" name="button" class="button_style" value="5" onclick="show('5')">5</button></td>
+            <td><button type="button" name="button" class="button_style" value="6" onclick="show('6')">6</button></td>
+            <td><button type="button" name="button" class="button_style other" value="-" onclick="show('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" name="button" class="button_style" value="7" onclick="show('7')">7</button></td>
+            <td><button type="button" name="button" class="button_style" value="8" onclick="show('8')">8</button></td>
+            <td><button type="button" name="button" class="button_style" value="9" onclick="show('9')">9</button></td>
+            <td><button type="button" name="button" class="button_style other" value="*" onclick="show('*')">*</button></td>
+          </tr>
+          <tr>
+            <td><button type="button" name="button" class="button_style" value="0" onclick="show('0')">0</button></td>
+            <td><button type="button" name="button" class="button_style" value="B" onclick="show('B')">del</button></td>
+            <td><button type="button" name="button" class="button_style" onclick="document.getElementById('result').value = ''">C</button></td>
+            <td><button type="button" name="button" class="button_style other" value="/" onclick="show('/')">/</button></td>
+
+          </tr>
+
+          <tr>
+            <td><button type="button" name="button" class="button_style" value="." onclick="show('.')">.</button></td>
+            <td><button type="button" name="button" class="button_style" value="(" onclick="show('(')">(</button></td>
+            <td><button type="button" name="button" class="button_style" value=")" onclick="show(')')">)</button></td>
+            <td><button type="button" name="button" class="button_style other" value="=" onclick="solve()">=</button></td>
+          </tr>
+        </table>
+
+
+
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="javascript.js">
+
+    </script>
+
+  </body>
+</html>
